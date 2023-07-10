@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Pointer</title>
+</head>
+
+<body>
+  <script src="./script.js"></script>
+  <!-- Colocando bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+  <!-- Navbar -->
+  <div class="container-fluid bg-dark">
+    <div class="row justify-content-center">
+      <div class=" col-auto me-5 col-lg-1 mx-3">
+
+        <img src="./relogio.png" class="pt-3" width="100px" alt="">
+
+      </div>
+      <div class="col-lg-4">
+
+        <h5 class="text-white mt-3">Bem Vindo(a) a Pointer Shop!!!</h5>
+
+        <form class="d-flex py-4">
+          <input class="form-control me-2 input-sm" type="text" placeholder="Digite sua pesquisa"
+            id="Busca"> 
+            <button type="button" class="btn btn-primary" onclick="barraPesquisa()">Pesquisar</button>
+        </form>
+      </div>
+
+
+      <div class="col-lg-4 text-center">
+
+
+
+        <h6 class="container-fluid text-white pt-3">Nome: Gabriel Henrique de Jesus Paiva | Matricula: 820139 | Curso:
+          Sistemas de Informação
+        </h6>
+
+        <h6 class="container-fluid text-white pt-3">Venha escolher seu relógio! <br> Entre em contato
+          conosco!</h6>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Forms select -->
+  <div class="container-fluid"c>
+    <div class="row  justify-content-center">
+      <div class="col-lg-3 col-12 bg-secondary py-3 mt-3"  id="container">
+
+        <center>
+          <h5 class=" mt-4 text-white"><strong>Pesquisa rápida - Escolha o produto</strong></h5>
+
+          <h6 class=" text-white mt-4">
+            Encontre o produto certo pelo preço certo!
+          </h6>
+        </center>
+        <select class="form-select mt-4" aria-label="Default select example" id="selectcolor">
+
+          <option selected><strong>All Colors</strong></option>
+          <option value="White">White</option>
+          <option value="Grey">Grey</option>
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+          <option value="Steel">Steel</option>
+          <option value="Brown">Brown</option>
+          <option value="Cream">Cream</option>
+          <option value="Off White">Off White</option>
+          <option value="Charcoal">Charcoal</option>
+          <option value="Silver">Silver</option>
+          <option value="Gold">Gold</option>
+          <option value="Purple">Purple</option>
+          <option value="Red">Red</option>
+          <option value="Green">Green</option>
+          <option value="Pink">Pink</option>
+          <option value="Olive">Olive</option>
+          <option value="Navy Blue">Navy Blue</option>
+          <option value="Orange">Orange</option>
+          <option value="Maroon">Maroon</option>
+          <option value="Lavender">Lavender</option>
+          <option value="Beige">Beige</option>
+          <option value="Bronze">Bronze</option>
+          <option value="Rose">Rose</option>
+          <option value="Burgundy">Burgundy</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Coffee Brown">Coffee Brown</option>
+          <option value="Cooper">Cooper</option>
+        </select>
+        <select class="form-select mt-4" aria-label="Default select example" id="selectbrand">
+          <option selected>All Brands</option>
+          <option value="Fastrack">Fastrack</option>
+          <option value="maxima">maxima</option>
+          <option value="ADIDAS">ADIDAS</option>
+          <option value="ADIDAS Originals">ADIDAS Originals</option>
+          <option value="Being Human">Being Human</option>
+          <option value="Puma">Puma</option>
+          <option value="ESPRIT">ESPRIT</option>
+          <option value="Carrera">Carrera</option>
+          <option value="CASIO">CASIO</option>
+          <option value="Chhota Bheem">Chhota Bheem</option>
+          <option value="GUESS">GUESS</option>
+          <option value="ice watch">ice watch</option>
+          <option value="Fossil">Fossil</option>
+          <option value="DKNY">DKNY</option>
+          <option value="GIORDANO">GIORDANO</option>
+          <option value="Playboy">Playboy</option>
+          <option value="Police">Police</option>
+          <option value="ASPEN">ASPEN</option>
+          <option value="Kenneth Cole">Kenneth Cole</option>
+          <option value="SKAGEN">SKAGEN</option>
+          <option value="Ed Hardy">Ed Hardy</option>
+          <option value="Titan">Titan</option>
+          <option value="Q&Q">Q&Q</option>
+          <option value="Citizen">Citizen</option>
+          <option value="Suunto">Suunto</option>
+          <option value="Helix">Helix</option>
+          <option value="Nautica">Nautica</option>
+          <option value="Baby-G">Baby-G </option>
+          <option value="Timex">Timex</option>
+          <option value="MISS SIXTY">MISS SIXTY</option>
+          <option value="Hop Scotch">Hop Scotch</option>
+          <option value="Morellato">Morellato</option>
+          <option value="Just Cavalli">Just Cavalli</option>
+          <option value="FCUK">FCUK</option>
+          <option value="Tommy Hilfiger">Tommy Hilfiger</option>
+          
+        </select>
+        <select class="form-select mt-4" aria-label="Default select example" id="selectgender">
+          <option selected>All Gender</option>
+          <option value="Unisex">Unisex</option>
+          <option value="Women">Women</option>
+          <option value="Girls">Girls</option>
+          <option value="Men">Men</option>
+          <option value="Boys">Boys</option>
+          
+        </select>
+
+        <div class="row p-1 justify-content-center">
+          <div class="col-sm-4 pt-4 col-12 mt-1">
+
+            <input type="number" class="form-control " id="precde" placeholder="R$ DE">
+          </div>
+          <div class="col-sm-4 pt-4 col-12 mt-1">
+
+            <input type="number" class="form-control" id="precate" placeholder="R$ ATE">
+
+
+
+          </div>
+        </div>
+        <div class="row justify-content-center mt-1">
+          <button type="button" class="btn btn-secondary text-center mt-3 text-white" style="width: 128px;"
+            onclick="filtro()" id="botaoPesquisa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+            Buscar
+                   </button>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Carrousel -->
+      <div class="col-12  col-lg-8 mt-3 align-self-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./pointer.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./pointer2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./pointer3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+
+  <div class="container-fluid ">
+    <div class="row justify-content-center">
+      <div class=" col-lg-9 mt-3 p-0 ">
+
+        <div class="row mx-lg-n5 justify-content-center" id="card1">
+
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col text-center pt-3" id="mais">
+            
+          </div>
+        </div>
+    
+
+
+
+      </div>
+
+
+
+
+      <!-- Most reviewed -->
+      <div class="col-lg-2 p-0 justify-content-end">
+        <div class="row">
+
+          <div class="col-lg-11 bg-body-secondary mt-3  border 2px gray" id="Top10">
+            <center>
+              <h5 class="text-white mt-2"><strong>Top 10 watches</strong></h5>
+              <span class="fa fa-star" style="color:orange;"></span>
+            <span class="fa fa-star" style="color:orange;"></span>
+            <span class="fa fa-star" style="color:orange;"></span>
+            <span class="fa fa-star" style="color:orange;"></span>
+            <span class="fa fa-star" style="color:orange;"></span>
+            </center>
+            <div class="row" id="barraLateral">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="container-fluid">
+    <div class="row mt-5 justify-content-center" id="footer">
+      <div class="col-lg-3 ms-0 me-3 mt-4">
+        <h6 class="text-white"><strong>Métodos de pagamento</strong></h6>
+
+        <i class="fa fa-cc-mastercard" style="font-size:36px; color: #000000;"></i>
+        <i class="fa fa-cc-visa" style="font-size:36px; color: #000000;"></i>
+        <i class="fa fa-cc-diners-club" style="font-size:36px; color: #000000;"></i>
+        <i class="fa fa-cc-paypal" style="font-size:36px; color: #000000;"></i>
+        <i class="fa fa-cc-amex" style="font-size:36px; color: #000000;"></i>
+      </div>
+
+
+
+
+
+
+      <div class="col-lg-3 mx-2 mt-4  text-black">
+        <strong>
+          <h6 class="text-white"> Funcionamento </h6></strong>
+          <p>Segunda a Sexta: 08:00 as 18:00</p>
+          <p>Sabado: 08:00 a 12:00</p>
+          <p>Domingo e feriados : Fechado</p>
+        
+
+      </div>
+
+
+
+
+
+
+      <div class="col-lg-2 mx-2 mt-4">
+        <h6 class="text-white"><strong>Redes sociais</strong></h6>
+        <i class="fa fa-facebook" style="color: #000000; font-size:36px"></i>
+        <i class="fa fa-twitter" style="color: #000000; font-size:36px"></i>
+        <i class="fa fa-instagram" style="color: #000000; font-size:36px"></i>
+        <i class="fa fa-whatsapp" style="color: #000000; font-size:36px"></i>
+
+      </div>
+
+
+
+
+
+      <div class="col-lg-2 mx-2 mt-4">
+        <h6 class="text-white"><strong>Entre em contato</strong></h6>
+
+        <i class="fa fa-map-marker" style="color: #000000; font-size:22px">  </i> Av. Pensilvânia, 1600, NW
+        <br>
+        <i class="fa fa-envelope mt-2" style="font-size:22px; color: #000000;"></i> <a href="#"> email@gmail.com</a>
+        <br>
+        <i class="fa fa-phone mt-2" style="color: #000000; font-size:22px"> </i> 0800 9642 99
+      </div>
+    </div>
+  </div>
+
+  <footer style="background-color: rgb(36, 36, 36); text-align: center;">
+    <i class="fa fa-copyright" style="font: size 22px; color: #ffffff;"> <strong>2023-Gabriel Paiva </strong></i>
+  </footer>
+
+
+</body>
+
+</html>

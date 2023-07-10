@@ -1,0 +1,30 @@
+.card{
+    box-shadow: 6px 6px 10px;
+}
+
+#container{
+    
+    background: linear-gradient(90deg, #ea93f6 35%, rgb(160, 4, 131) 100%);
+   
+    border-radius: 7px;
+   
+
+
+}
+
+#botaoPesquisa{
+    color: #fff;
+    background: #30d6d3;
+    box-shadow: 2px ;
+    border-radius: 7px;
+  
+}
+
+#footer{
+    background-color: rgb(110, 110, 110) ;
+}
+
+#Top10{
+    background: linear-gradient(-180deg, #454045 35%, rgb(161, 31, 159) 100%);
+    border-radius: 7px;
+}
